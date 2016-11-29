@@ -1,24 +1,38 @@
-# README
+# US Federal Agency Intranet Framework
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+## License
 
-* System dependencies
+All source code in the [US Federal Agency Intranet Framework](https://github.com/Quinncuatro/USFederalAgencyIntranetFramework)
+is available under the Beerware License. See
+[LICENSE.md](LICENSE.md) for details.
 
-* Configuration
+## Getting started
 
-* Database creation
+To get started with the app, clone the repo and then install the needed gems:
 
-* Database initialization
+```
+$ bundle install --without production
+```
 
-* How to run the test suite
+Next, migrate the database:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails db:migrate
+```
 
-* Deployment instructions
+Finally, run the test suite to verify that everything is working correctly:
 
-* ...
+```
+$ rails test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+
+For more information, see the
+[*US Federal Agency Intranet Framework* Repo](https://github.com/Quinncuatro/USFederalAgencyIntranetFramework).
