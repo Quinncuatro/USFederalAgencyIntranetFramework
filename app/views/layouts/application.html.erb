@@ -6,9 +6,90 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro" />
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
   </head>
 
   <body>
-    <%= yield %>
+    <body>
+      <div class="container-fluid">
+      <div class="titleTable">
+              <div class="row">
+                      <div class="col-xs-12 col-sm-offset-4 col-sm-6">
+                              <table class="table">
+                                      <tr>
+                                              <td class="seal hidden-xs">
+                                                      <%= image_tag("ct_seal.png", alt: "Connecticut Seal") %>
+                                              </td>
+                                              <td class="titles">
+                                                      <h3 class="districtTitle">UNITED STATES DISTRICT COURT</h3>
+                                                      <h1 class="districtTitle">District of Blank Blank Blank</h1>
+                                                      <p class="clerkTitle">Honorable Blank Blank, Chief Judge</p>
+                                                      <p class="clerkTitle">Blank Blank, Clerk of Court</p>
+                                              </td>
+                                      </tr>
+                              </table>
+                      </div>
+              </div>
+      </div>
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a class="navLink" href="/index.php">Home</a></li>
+              <li class="divider-vertical"></li>
+              <li><a class="navLink" href="/resources_IT.php">IT</a></li>
+              <li class="divider-vertical"></li>
+              <li><a class="navLink" href="/personnel_corner.php">HR</a></li>
+              <li class="divider-vertical"></li>
+              <li><a class="navLink" href="/forms.php">Forms</a></li>
+              <li class="divider-vertical"></li>
+              <li><a class="navLink" href="/resources_ops.php">Operations</a></li>
+              <li class="divider-vertical"></li>
+              <li><a class="navLink" href="/whats_new.php">What's New</a></li>
+              <li class="divider-vertical"></li>
+              <li><a class="navLink" href="/courtFamily.php">Court Family</a></li>
+              <li class="divider-vertical"></li>
+              <li><a class="navLink" href="/chambers.php">Chambers</a></li>
+              <li class="divider-vertical"></li>
+              <li><a class="navLink" href="/jury.php">Jury</a></li>
+              <li class="divider-vertical"></li>
+              <!--<li><a class="navLink" href="/sphider/search.php">Search</a></li>
+              <li class="divider-vertical"></li>-->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="bodyThing">
+        <%= yield %>
+      </div>
+      <div class="footerStyle">
+              <div class="row">
+                      <div class="col-xs-12 col-sm-8 col-md-10 text-left">
+                              <p>U.S. District Court, District of Connecticut</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-md-1 text-left">
+                              <p><a href="whats_new/disclaimer.htm">Disclaimer</a></p>
+                      </div>
+                      <div class="col-xs-12 col-sm-2 col-md-1 text-left">
+                              <p><a href="whats_new/Clerks%20Office%20Mission%20Statement.pdf">Mission</a></p>
+                      </div>
+              </div>
+      </div>
+      </div>
   </body>
 </html>
