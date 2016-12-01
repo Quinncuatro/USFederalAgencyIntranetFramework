@@ -64,3 +64,6 @@ gem 'us_web_design_standards_ror', '0.1.0'
 
 # Font-Awesome to help with vectorized icons
 gem 'font-awesome-rails', '4.7.0.0'
+
+# CarrierWave handles file uploads
+gem 'carrierwave', '0.9'

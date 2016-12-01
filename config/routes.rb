@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :uploads, only: [:index, :new, :create, :destroy]
+
   root 'table_page#home'
   get '/about', to: 'static_pages#about'
   
@@ -11,4 +13,5 @@ Rails.application.routes.draw do
   get '/court_family', to: 'table_page#courtFamily'
   get '/chambers', to: 'table_page#chambers'
   get '/jury', to: 'table_page#jury'
+  get '/alldocs', to: 'uploads#index'
 end
