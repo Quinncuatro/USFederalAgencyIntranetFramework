@@ -1,2 +1,14 @@
-<h1>TablePage#forms</h1>
-<p>Find me in app/views/table_page/forms.html.erb</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
+    <table class="table table-bordered">
+      <tr>
+        <td class="tableHeading">Forms</td>
+      </tr>
+      <% @uploads.each do |upload| %>
+        <tr>
+          <td><%= link_to upload.name, upload.attachment_url %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

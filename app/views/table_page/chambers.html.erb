@@ -4,21 +4,11 @@
       <tr>
         <td class="tableHeading">Chambers</td>
       </tr>
-      <tr>
-        <td><a href="#">Thing One</a></td>
-      </tr>
-      <tr>
-        <td><a href="#">Thing Two</a></td>
-      </tr>
-      <tr>
-        <td><a href="#">Thing Three</a></td>
-      </tr>
-      <tr>
-        <td><a href="#">Thing Four</a></td>
-      </tr>
-      <tr>
-        <td><a href="#">Thing Five</a></td>
-      </tr>
+      <% @uploads.each do |upload| %>
+        <tr>
+          <td><%= link_to upload.name, upload.attachment_url %></td>
+        </tr>
+      <% end %>
     </table>
   </div>
 </div>
