@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
-  root 'static_pages#about'
+  root 'table_page#home'
   get '/about', to: 'static_pages#about'
+  
+  get 'table_page/home'
+  get '/it', to: 'table_page#it'
+  get '/hr', to: 'table_page#hr'
+  get '/forms', to: 'table_page#forms'
+  get '/operations', to: 'table_page#operations'
+  get '/whats_new', to: 'table_page#whatsNew'
+  get '/court_family', to: 'table_page#courtFamily'
+  get '/chambers', to: 'table_page#chambers'
+  get '/jury', to: 'table_page#jury'
 end
