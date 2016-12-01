@@ -61,3 +61,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # RoR-ified US Web Design Standards
 gem 'us_web_design_standards_ror', '0.1.0'
+
+# Font-Awesome to help with vectorized icons
+gem 'font-awesome-rails', '4.7.0.0'
