@@ -16,6 +16,8 @@
     <%= f.text_field :name %>
     <%= f.label :category %>
     <%= f.select :category, ['Chambers', 'Court Family', 'Forms', 'Home', 'HR', 'IT', 'Jury', 'Operations', 'What\'s New']%>
+    <%= f.label :subcategory %>
+    <%= f.select :subcategory, ['A','B','C']%>
     <%= f.label :attachment %>
     <%= f.file_field :attachment %>
     <%= f.submit "Save", class: "btn btn-primary" %>

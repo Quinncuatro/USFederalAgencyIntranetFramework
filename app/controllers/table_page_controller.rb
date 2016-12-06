@@ -4,6 +4,7 @@ class TablePageController < ApplicationController
   end
 
   def it
+    @subcategories = Upload.where(category: 'IT').distinct.pluck(:subcategory)
     @uploads = Upload.where(category: 'IT').order(:name)
   end
 

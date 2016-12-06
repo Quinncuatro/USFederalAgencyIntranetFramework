@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'table_page#home'
   get '/about', to: 'static_pages#about'
   
-  get 'table_page/home'
+  get '/home', to: 'table_page#home'
   get '/it', to: 'table_page#it'
   get '/hr', to: 'table_page#hr'
   get '/forms', to: 'table_page#forms'
